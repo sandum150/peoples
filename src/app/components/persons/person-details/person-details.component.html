@@ -1,0 +1,9 @@
+<h3>Details</h3>
+
+{{personSelected?.name}}
+
+<!--<p>age from parent {{age}}</p>-->
+
+<button (click)="onShowAge(personSelected.age)" [hidden]="!personSelected" >Show age</button>
+
+<pl-person-age *ngIf="showAge" [age]="age"></pl-person-age>
